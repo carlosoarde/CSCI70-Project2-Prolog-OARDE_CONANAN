@@ -1,0 +1,43 @@
+% a. Is martha an employee?
+employee(martha).
+
+% b. List all employees.
+all_employees(List).
+
+% c. List all those under the marketing department.
+all_marketing_employees(List).
+
+% d. Are julia and jack under the same department?
+% This could either be asking for a boolean, in which case use:
+same_department(julia, jack).
+% Or to display the deparment, in which case use:
+belongs_to(julia, Dept), belongs_to(jack, Dept).
+
+% e. Are julia and martha under the same department?
+% unlike d, both options produce false here:
+same_department(julia, martha).
+belongs_to(julia, Dept), belongs_to(martha, Dept).
+
+% f. Is john assigned to proj2?
+assigned_to(john, proj2).
+
+% g. List all projects assigned to martha.
+all_projects_martha(List).
+
+% h. Are martha and josh assigned to the same project?
+% This could either be asking for a boolean, in which case use:
+same_project(martha, josh).
+% Or to display the project, in which case use:
+assigned_to(martha, Project), assigned_to(josh, Project).
+
+% i. Who are the employees assigned to proj1?
+employees_in_proj1(List).
+
+% j. Which departments have employees assigned to projects?
+departments_with_projects(List).
+
+% k. Does the marketing department have employees?
+belongs_to(_, marketing) ,!.
+
+% l. Does the accounting department have employees?
+belongs_to(_, accounting),!.

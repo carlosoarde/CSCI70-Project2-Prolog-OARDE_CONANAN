@@ -1,0 +1,17 @@
+% a. What is the status of proj3?
+status(proj3, Status).
+
+% b. Who is the head of the marketing department?
+head_of(marketing, Head).
+
+% c. Is the marketing department busy?
+busy_department(marketing).
+
+% d. Is the sales department busy?
+busy_department(sales).
+
+% e. Is jack efficient?
+efficient_employee(jack).
+
+% f. Is martha efficient?
+efficient_employee(martha).
