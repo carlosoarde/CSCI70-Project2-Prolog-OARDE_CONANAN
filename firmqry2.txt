@@ -11,7 +11,7 @@ busy_department(marketing).
 busy_department(sales).
 
 % e. Is jack efficient?
-efficient_employee(jack).
+efficient_employee(jack),!.
 
 % f. Is martha efficient?
-efficient_employee(martha).
+efficient_employee(martha),!.

@@ -37,7 +37,7 @@ employees_in_proj1(List).
 departments_with_projects(List).
 
 % k. Does the marketing department have employees?
-belongs_to(_, marketing) ,!.
+belongs_to(_, marketing),!.
 
 % l. Does the accounting department have employees?
 belongs_to(_, accounting),!.
