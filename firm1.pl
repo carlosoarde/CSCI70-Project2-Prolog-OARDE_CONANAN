@@ -39,20 +39,6 @@ same_department(Emp1, Emp2) :-
     belongs_to(Emp1, Dept),
     belongs_to(Emp2, Dept).
 same_project(Emp1, Emp2) :-
-    assigned_to(Emp1, Project),
-    assigned_to(Emp2, Project).
-
-% Helpers for returning all applicable entries
-% e.g. "list all..." and "who are..."
-all_employees(List) :-
-    findall(X, employee(X), List).
-all_marketing_employees(List) :-
-    findall(X, belongs_to(X, marketing), List).
-all_projects_martha(List) :-
-    findall(Project, assigned_to(martha, Project), List).
-employees_in_proj1(List) :-
-    findall(Employee, assigned_to(Employee, proj1), List).
-departments_with_projects(List) :-
-    findall(Dept, (belongs_to(Employee, Dept), assigned_to(Employee, _)), Depts),
-    sort(Depts, List).  % Remove duplicates
+    assigned_to(Emp1, Proj),
+    assigned_to(Emp2, Proj).
 
